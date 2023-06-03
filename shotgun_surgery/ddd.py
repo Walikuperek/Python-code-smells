@@ -141,4 +141,4 @@ class Searchable(Model):
     id: GUID
     title: str
     url: str
-    relevance: float
+    relevance: float  # or some inverted index mechanism like elasticsearch or meilisearch utilizes
