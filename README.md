@@ -15,7 +15,7 @@
 
 ## Shotgun Surgery
 ### What is it?
-Shotgun surgery is a code smell that occurs when a single change to the source code requires changes to multiple classes. This is a problem because it means that the code is not cohesive and that the code is not encapsulated. This means that the code is not modular and that it is not easy to maintain.
+Shotgun surgery is a code smell that occurs when a single change to the source code requires changes to multiple places. This is a problem because it means that the code is not cohesive and that the code is not encapsulated. This means that the code is not modular and that it is not easy to maintain.
 
 <hr />
 
