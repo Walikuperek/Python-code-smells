@@ -31,5 +31,5 @@ class ImportedCourseDetailsView(object):
     def get(self, request, course_id):
         course = Course.objects.get(pk=course_id)
         # Omitted course.is_assessment = True logic
-        # so result will be shown only for teacher :(
+        # so result will be shown only for some users group :(
         return Response(data=course.__dict__)
