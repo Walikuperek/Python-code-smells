@@ -22,10 +22,10 @@ Shotgun surgery is a code smell that occurs when a single change to the source c
 ### Example
 
 ### Code example
-Go to [shotgun surgery folder](#) and check the code.
+Go to [shotgun surgery folder](https://github.com/Walikuperek/Python-code-smells/tree/master/shotgun_surgery) and check the code.
 
 ### How to fix it?
-Proper models which encapsulates basic operations -> which once done others don't have to remember :)
+Proper models which encapsulates basic operations -> once done others don't have to remember :)
 
 Check files in order:
 1. problem.py
