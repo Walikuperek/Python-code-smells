@@ -1,4 +1,15 @@
-"""DDD - Domain Driven Design"""
+"""
+DDD - Domain Driven Design
+
+This code example omits DAL (Data Access Layer) which encapsulates DB -> gives simple DB swao, example:
+
+class PlayerContentRepository(ABC):
+    # ...
+    
+    @abstractmethod
+    def get(**kwargs):
+        ''''Interface for getting the PlayerContent object'''
+"""
 from typing import Union, List
 from shared import Model
 
