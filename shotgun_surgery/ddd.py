@@ -1,6 +1,6 @@
+"""DDD - Domain Driven Design"""
 from typing import Union, List
 from shared import Model
-
 
 GUID = int
 
@@ -58,8 +58,8 @@ class Chapter(Model):
     id: int
     parent: Union['Chapter', None]
     data: Union[Lesson, Page]
-    
-    
+
+
 class CourseSettings(Model):
     """Contains settings for course."""
     course: 'Course'
@@ -68,6 +68,8 @@ class CourseSettings(Model):
 
     @staticmethod
     def create_from_dict(settings: dict = {}):
+        if 'course' not in settings:
+            raise ValueError('Course relation is required')
         return CourseSettings.objects.create(**settings)
 
 
